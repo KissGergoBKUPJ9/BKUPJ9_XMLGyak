@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+	<cim id="cim1" nev="Egyutt a bolygoert"/>
+	<eloado id="eload1">
+		<nev>Andrew Peterson</nev>
+		<adoszam>879654879575</adoszam>
+		<lakcim>3525 Miskolc, Pelda utca 10</lakcim>
+	</eloado>
+	<hallgatok>
+		<hallgato id="hallg1">
+			<nev></nev>
+			<lakcim></lakcim>
+		</hallgato>
+	</hallgatok>
+	<datum>2021.09.26</datum>
+	<helszin>Miskolc Tündérkert</helyszin>
+</konferencia>
