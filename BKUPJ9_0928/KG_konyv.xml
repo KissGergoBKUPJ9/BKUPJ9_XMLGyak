@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<konyvek>
+    <konyv id="konyv1">
+        <cim>XML gyakorlo</cim>
+        <kiadasiEv>2008/kiadasiEv>
+        <kiado>IT papers Zrt.</kiado>
+        <szerzo0>Mark Peterson</szerzo0>
+        <abstract></abstract>        
+    </konyv>
+    <konyv id="konyv2">
+        <cim>C++ for beginners</cim>
+        <kiadasiEv>2010</kiadasiEv>
+        <kiado>Global Nyomda Kft.</kiado>
+        <szerzo0>Elon Musk</szerzo0>
+        <abstract></abstract>       
+    </konyv>
+    <konyv id="konyv3">
+        <cim>C# for beginners</cim>
+        <kiadasiEv>1991</kiadasiEv>
+        <kiado>NY papers Bt.</kiado>
+        <szerzo0>József Attila</szerzo0>  
+        <abstract></abstract>         
+    </konyv>
+</konyvek>

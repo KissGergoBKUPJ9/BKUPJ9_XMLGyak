@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE udvar">[
+    <!ELEMENT gazda (#PCDATA)>
+    <!ELEMENT kutya (#PCDATA)>
+    <!ELEMENT kakas (#PCDATA)>
+    <!ELEMENT tyuk (#PCDATA)>
+    <!ELEMENT diszno (#PCDATA)>
+]>  
+<udvar>
+    <gazda nev="Alex"/>
+    <kutya nev="Nero"></kutya>
+    <kakas id="kakas1"/>
+    <tyuk ferj="szv_ns3_2jb"/>
+    <tyuk ferj="szv_ns3_2jb"/>
+    <!--<roka/>-->
+    <diszno nev="Józsi"></diszno>
+</udvar>

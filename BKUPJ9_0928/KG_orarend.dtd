@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE orarend SYSTEM "KG_orarend.xml">[
+    <!ELEMENT ora (id, tipus, targy, idopont(tol, ig, nap), helyszin, oktato, szak)>
+    <!ELEMENT ID, tipus #REQUIRED>
+    <!ELEMENT targy (#PCDATA)>
+    <!ELEMENT idopont (#PCDATA)>
+        <!ELEMENT tol (#PCDATA)>
+        <!ELEMENT ig (#PCDATA)>
+        <!ELEMENT nap (#PCDATA)>
+    <!ELEMENT helyszin (#PCDATA)>
+    <!ELEMENT oktato (#PCDATA)>
+    <!ELEMENT szak (#PCDATA)>
+]>

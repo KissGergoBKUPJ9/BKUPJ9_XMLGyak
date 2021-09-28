@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE konyvek SYSTEM "KG_konyv.xml">[
+    <!ELEMENT konyv (id,cim,kiadasiEv,kiado,szerzo0,abstract)>
+    <!ELEMENT id #required>
+    <!ELEMENT cim (#PCDATA)>
+    <!ELEMENT kiadasiEv (#PCDATA)>
+    <!ELEMENT kiado (#PCDATA)>
+    <!ELEMENT szerzo0 (#PCDATA)>
+    <!ELEMENT abstract (#PCDATA)>
+]>
