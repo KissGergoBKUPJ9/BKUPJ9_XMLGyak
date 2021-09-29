@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE adatbazis SYSTEM "KG_adatbazis.dtd">
+<adatbazis>
+    <dolgozo kod="d01">
+        <nev>Kiss Géza</nev>
+        <fizetes>300.000</fizetes>
+    </dolgozo>
+</adatbazis>

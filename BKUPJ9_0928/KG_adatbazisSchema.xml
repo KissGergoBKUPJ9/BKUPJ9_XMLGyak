@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="adatbazis">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dolgozo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="kod" type="xs:ID"/>
+                            <xs:element name="nev" type="xs:string"/>
+                            <xs:element name="fizetes" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    </xs:schema>
