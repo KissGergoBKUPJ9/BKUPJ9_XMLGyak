@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nevjegykartyak>
+    <nevjegykartya>
+        <nev>Kiss Gergő</nev>
+        <ceg>
+            <nev>Kiss Kft.</nev>
+            <cim>
+                <iranyitoszam>3525</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Pelda</utca>
+                <hazszam>10</hazszam>
+            </cim>
+            <telefonszam>06302562563</telefonszam>
+            <weblap>www.kisskft.hu</weblap>
+        </ceg>
+        <beosztas>CEO</beosztas>
+        <telefonszam>06302582589</telefonszam>
+        <email>peldaemail@gmail.com</email>
+    </nevjegykartya>
+    <nevjegykartya>
+        <nev>Kiss Jenő</nev>
+        <ceg>
+            <nev>Kiss2 Kft.</nev>
+            <cim>
+                <iranyitoszam>3525</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Pelda</utca>
+                <hazszam>12</hazszam>
+            </cim>
+            <telefonszam>06302562565</telefonszam>
+            <weblap>www.kiss2kft.hu</weblap>
+        </ceg>
+        <beosztas>CEO</beosztas>
+        <telefonszam>06302582587</telefonszam>
+        <email>peldaemail2@gmail.com</email>
+    </nevjegykartya>
+</nevjegykartyak>
