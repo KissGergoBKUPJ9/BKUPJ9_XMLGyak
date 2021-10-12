@@ -4,25 +4,46 @@
     <xs:element name="nevjegykartyak">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="nevjegykartya" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="nev" type="xs:string"></xs:element>
-                            <xs:element name="cim" type="xs:string"></xs:element>
-                            <xs:element name="iranyitoszam" type="xs:integer"></xs:element>
-                            <xs:element name="varos" type="xs:string"></xs:element>
-                            <xs:element name="utca" type="xs:string"></xs:element>
-                            <xs:element name="hazszam" type="xs:integer"></xs:element>
-                            <xs:element name="telefonszam" type="xs:integer"></xs:element>
-                            <xs:element name="weblap" type="xs:string"></xs:element>
-                            <xs:element name="beosztas" type="xs:string"></xs:element>
-                            <xs:element name="telefonszam" type="xs:integer"></xs:element>
-                            <xs:element name="email" type="xs:string"></xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="nevjegykartya" type="nevjegyTipus" minOccurs="0" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
         </xs:complexType>
-        
     </xs:element>
+
+    <xs:complexType name="nevjegyTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"></xs:element>
+            <xs:element name="ceg" type="cegTipus"></xs:element>
+            <xs:element name="beosztas" type="beosztasTipus"></xs:element>
+            <xs:element name="telefonszam" type="xs:positiveInteger"></xs:element>
+            <xs:element name="email" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="cegTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"></xs:element>
+            <xs:element name="cim" type="cimTipus"></xs:element>
+            <xs:element name="telefonszam" type="xs:positiveInteger"></xs:element>
+            <xs:element name="weblap" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="cimTipus">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="xs:positiveInteger"></xs:element>
+            <xs:element name="varos" type="xs:string"></xs:element>
+            <xs:element name="utca" type="xs:string"></xs:element>
+            <xs:element name="hazszam" type="xs:positiveInteger"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="beosztasTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="alkalmazott"></xs:enumeration>
+            <xs:enumeration value="menedszer"></xs:enumeration>
+            <xs:enumeration value="középvezető"></xs:enumeration>
+            <xs:enumeration value="felsővezető"></xs:enumeration>
+            <xs:enumeration value="CEO"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

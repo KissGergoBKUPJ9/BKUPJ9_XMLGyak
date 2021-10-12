@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek>
+    <konyv>
+        <cim></cim>
+        <szerző></szerző>
+        <szereplo>
+            <nev></nev>
+            <baratja></baratja>
+            <szuletett></szuletett>
+            <jellemzes></jellemzes>
+        </szereplo>
+        <szereplo>
+            <nev></nev>
+            <szuletett></szuletett>
+            <jellemzes></jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
