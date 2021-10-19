@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="szemelyek">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:positiveInteger" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element name="nev" type="xs:string"></xs:element>
+                <xs:element name="kor" type="xs:positiveInteger"></xs:element>
+                <xs:element name="varos" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

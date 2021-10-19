@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<szemelyek>
+    <szemely>
+        <szemID>1</szemID>
+        <nev>Példa Lajos</nev>
+        <kor>23</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+
+    <szemely>
+        <szemID>2</szemID>
+        <nev>Vér Misi</nev>
+        <kor>34</kor>
+        <varos>Karancslapujtő</varos>
+    </szemely>
+
+    <szemely>
+        <szemID>3</szemID>
+        <nev>Sárga Jácint</nev>
+        <kor>55</kor>
+        <varos>Törtel</varos>
+    </szemely>
+</szemelyek>

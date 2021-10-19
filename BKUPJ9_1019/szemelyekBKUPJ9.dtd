@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="szemelyekBKUPJ9.xml" type="application/xml-dtd"?>
+<!DOCTYPE szemelyek SYSTEM "szemelyekBKUPJ9.xml" [
+    <!ELEMENT szemely (id, nev, kor, varos)>
+    <!ATTLIST szemely id ID #REQUIRED>
+    <!ELEMENT nev (#PCDATA)>
+    <!ELEMENT kor (#PCDATA)>
+    <!ELEMENT varos (#PCDATA)>
+]>
