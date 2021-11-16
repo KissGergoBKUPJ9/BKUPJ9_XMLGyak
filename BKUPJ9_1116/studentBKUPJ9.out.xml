@@ -3,11 +3,10 @@
 <class>
     <student>
         <id>01</id>
-        <keresztnev>KGergő</keresztnev>
+        <keresztnev>Gergő</keresztnev>
         <vezeketnev>Kiss</vezeketnev>
         <becenev>Geri</becenev>
         <kor>22</kor>
-        <fizetes>6000000</fizetes>
     </student>
 
     <student>
@@ -16,7 +15,6 @@
         <vezeketnev>Próba</vezeketnev>
         <becenev>Józsi</becenev>
         <kor>33</kor>
-        <fizetes>5000000</fizetes>
     </student>
 
     <student>
@@ -25,6 +23,5 @@
         <vezeketnev>Vicc</vezeketnev>
         <becenev>Eli</becenev>
         <kor>24</kor>
-        <fizetes>4000000</fizetes>
     </student>
 </class>

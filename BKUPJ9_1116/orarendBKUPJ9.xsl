@@ -6,28 +6,30 @@ xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">
 		
       <html> 
          <body> 
-            <h2>student</h2> 
+            <h2>Orarend</h2> 
 				
             <table border = "1"> 
-               <tr bgcolor = "#cian"> 
+               <tr bgcolor = ""> 
                   <th>ID</th> 
-                  <th>Keresztnev</th> 
-                  <th>Vezeteknev</th> 
-                  <th>Becenev</th> 
-                  <th>Kor</th> 
+                  <th>Targy</th> 
+                  <th>Idopont</th> 
+                  <th>Helyszin</th> 
+                  <th>Oktato</th> 
+                  <th>Szak</th> 
                </tr> 
 				
                
-               <xsl:for-each select="class/student"> 
+               <xsl:for-each select="orarend/ora"> 
                   <tr> 
                      <td> 
                         <xsl:value-of select = "@id"/> 
                      </td> 
 						
-                     <td><xsl:value-of select = "keresztnev"/></td> 
-                     <td><xsl:value-of select = "vezeteknev"/></td> 
-                     <td><xsl:value-of select = "becenev"/></td> 
-                     <td><xsl:value-of select = "kor"/></td> 
+                     <td><xsl:value-of select = "targy"/></td> 
+                     <td><xsl:value-of select = "idopont"/></td> 
+                     <td><xsl:value-of select = "helyszin"/></td> 
+                     <td><xsl:value-of select = "oktato"/></td>
+                     <td><xsl:value-of select = "szak"/></td>  
 						
                   </tr> 
                </xsl:for-each> 
