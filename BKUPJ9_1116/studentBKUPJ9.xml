@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "studentBKUPJ9.xsl"?> 
+<class>
+    <student>
+        <id>01</id>
+        <keresztnev>KGergő</keresztnev>
+        <vezeketnev>Kiss</vezeketnev>
+        <becenev>Geri</becenev>
+        <kor>22</kor>
+    </student>
+
+    <student>
+        <id>02</id>
+        <keresztnev>József</keresztnev>
+        <vezeketnev>Próba</vezeketnev>
+        <becenev>Józsi</becenev>
+        <kor>33</kor>
+    </student>
+
+    <student>
+        <id>03</id>
+        <keresztnev>Elek</keresztnev>
+        <vezeketnev>Vicc</vezeketnev>
+        <becenev>Eli</becenev>
+        <kor>24</kor>
+    </student>
+</class>
