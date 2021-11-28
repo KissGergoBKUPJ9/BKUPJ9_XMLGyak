@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href = "studentBKUPJ9_choose.xsl"?>
+
+<class>
+    <student id="01">
+        <firstname>Kiss</firstname>
+        <lastname>Gergő</lastname>
+        <nickname>Geri</nickname>
+        <salary>6000000</salary>
+        <degree>High</degree>
+    </student>
+    <student id="02">
+        <firstname>Próba</firstname>
+        <lastname>József</lastname>
+        <nickname>Józsi</nickname>
+        <salary>5000000</salary>
+        <degree>High</degree>
+    </student>
+    <student id="03">
+        <firstname>Vicc</firstname>
+        <lastname>Elek</lastname>
+        <nickname>Eli</nickname>
+        <salary>4000000</salary>
+        <degree>Medium</degree>
+    </student>
+</class>

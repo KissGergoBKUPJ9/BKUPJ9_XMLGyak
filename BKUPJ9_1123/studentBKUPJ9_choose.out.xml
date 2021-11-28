@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>Tanulók</h2>
+        <table border="1">
+            <tr bgcolor="#ffcc00">
+                <th>ID</th><th>Vezetéknév</th><th>Keresztnév</th><th>Becenév</th><th>Fizetés</th><th>Fokozat</th>
+            </tr>
+            <tr>
+                <td>01</td><td>Kiss</td><td>Gergő</td><td>Geri</td><td>6000000</td><td>
+                                        Low
+                                    </td>
+            </tr>
+            <tr>
+                <td>02</td><td>Próba</td><td>József</td><td>Józsi</td><td>5000000</td><td>
+                                        Medium
+                                    </td>
+            </tr>
+            <tr>
+                <td>03</td><td>Vicc</td><td>Elek</td><td>Eli</td><td>4000000</td><td>
+                                        High
+                                    </td>
+            </tr>
+        </table>
+    </body>
+</html>
