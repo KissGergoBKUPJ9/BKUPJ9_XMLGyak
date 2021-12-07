@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><idojarasallomas_adatok xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="XMLSchemaBKUPJ9.xsd">
+
+    <szenzorállomások>
+        <szenzorállomás központID="01" szenzorID="01">
+            <szél>
+                <szélirány>keleti</szélirány>
+                <szélsebesség>34</szélsebesség>
+            </szél>
+            <adatok>
+                <páratartalom>87</páratartalom>
+                <hőmérséklet>22</hőmérséklet>
+                <légnyomás>1011</légnyomás>
+            </adatok>
+        </szenzorállomás>
+
+        <szenzorállomás központID="02" szenzorID="02">
+            <szél>
+                <szélirány>nyugati</szélirány>
+                <szélsebesség>12</szélsebesség>
+            </szél>
+            <adatok>
+                <páratartalom>67</páratartalom>
+                <hőmérséklet>18</hőmérséklet>
+                <légnyomás>1001</légnyomás>
+            </adatok>
+        </szenzorállomás>
+    </szenzorállomások>
+
+    <elosztóközpontok>
+        <elosztóközpont előrejelzőID="01" központID="01" monitorID="01" szenzorID="01">
+            <elosztandóAdat>szenzoradatok</elosztandóAdat>
+        </elosztóközpont>
+
+        <elosztóközpont előrejelzőID="02" központID="02" monitorID="02" szenzorID="02">
+            <elosztandóAdat>algoritmizáltadat</elosztandóAdat>
+        </elosztóközpont>
+    </elosztóközpontok>
+
+    <előrejelzőállomások>
+        <előrejelzőállomás előrejelzőID="01" központID="01">
+            <algoritmizáltAdat>
+                <megbecsültIdőjárás>Napos, enyhén szeles, kellemesen meleg</megbecsültIdőjárás>
+                <nyersadatok>Keleti, 34, 87, 22, 1011</nyersadatok>
+            </algoritmizáltAdat>
+        </előrejelzőállomás>
+
+        <előrejelzőállomás előrejelzőID="02" központID="01">
+            <algoritmizáltAdat>
+                <megbecsültIdőjárás>Szeles, borús, hűvös</megbecsültIdőjárás>
+                <nyersadatok>Nyugati, 12, 67, 18, 1001</nyersadatok>
+            </algoritmizáltAdat>
+        </előrejelzőállomás>
+    </előrejelzőállomások>
+
+    <monitorozások>
+        <monitorozás központId="01" monitorID="01">
+            <várhatóIdőjárás>Napos, enyhén szeles, kellemesen meleg</várhatóIdőjárás>
+            <aktuálisIdőjárás>Meleg, száraz</aktuálisIdőjárás>
+            <idő>12:20</idő>
+            <statisztika>
+                <elmúltIdőjárás>melegebb az átlagosnál</elmúltIdőjárás>
+                <előrejelzésPontossága>pontos</előrejelzésPontossága>
+            </statisztika>
+        </monitorozás>
+
+        <monitorozás központId="02" monitorID="02">
+            <várhatóIdőjárás>Szeles, borús, hűvös</várhatóIdőjárás>
+            <aktuálisIdőjárás>napos</aktuálisIdőjárás>
+            <idő>14:10</idő>
+            <statisztika>
+                <elmúltIdőjárás>átlagosnál hűvösebb</elmúltIdőjárás>
+                <előrejelzésPontossága>pontos</előrejelzésPontossága>
+            </statisztika>
+        <monitorozó>Béla</monitorozó></monitorozás>
+    </monitorozások>
+
+</idojarasallomas_adatok>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <xs:element name="idojarasallomas_adatok" type="idojarasallomasAdatokTipus">
+    </xs:element>
+    <xs:complexType name="idojarasallomasAdatokTipus">
+        <xs:sequence>
+            <xs:element name="szenzorállomás" type="szenzorállomásTípus" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="elosztóközpont" type="elosztóközpontTípus" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="előrejelzőállomás" type="előrejelzőállomásTípus" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="monitorozás" type="monitorozásTípus" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+        <xs:complexType name="szenzorállomásTípus">
+            <xs:sequence>
+                <xs:element name="szenzorID" type="xs:int"/>
+                <xs:element name="szél" type="szélTípus"/>
+                <xs:element name="adatok" type="adatokTípus"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="elosztóközpontTípus">
+            <xs:sequence>
+                <xs:element name="központID" type="xs:int"/>
+                <xs:element name="elosztandóAdat" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="előrejelzőállomásTípus">
+            <xs:sequence>
+                <xs:element name="előrejelzőID" type="xs:int"/>
+                <xs:element name="algoritmizáltAdat" type="algoritmizáltAdatTípus"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="monitorozásTípus">
+            <xs:sequence>
+                <xs:element name="monitorID" type="xs:int"/>
+                <xs:element name="várhatóIdőjárás" type="xs:string"/>
+                <xs:element name="aktuálisIdőjárás" type="xs:string"/>
+                <xs:element name="idő" type="xs:int"/>
+                <xs:element name="statisztika" type="statisztikaTípus"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="szélTípus">
+            <xs:sequence>
+                <xs:element name="szélirány" type="xs:string"/>
+                <xs:element name="szélsebesség" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="adatokTípus">
+            <xs:sequence>
+                <xs:element name="páratartalom" type="xs:int"/>
+                <xs:element name="hőmérséklet" type="xs:int"/>
+                <xs:element name="légnyomás" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="algoritmizáltAdatTípus">
+            <xs:sequence>
+                <xs:element name="megbecsültIdőjárás" type="xs:string"/>
+                <xs:element name="nyersadatok" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:complexType name="statisztikaTípus">
+            <xs:sequence>
+                <xs:element name="elmúltIdőjárás" type="xs:string"/>
+                <xs:element name="előrejelzésPontossága" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+</xs:schema>
