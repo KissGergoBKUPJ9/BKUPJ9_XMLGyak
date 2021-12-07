@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
     <xs:element name="idojarasallomas_adatok" type="idojarasallomasAdatokTipus">
+        <xs:key name="szenzor_ID">
+            <xs:selector xpath="szenzorállomás"/>
+            <xs:field xpath="szenzorID"></xs:field>
+        </xs:key>
+        <xs:key name="központ_ID">
+            <xs:selector xpath="elosztóközpont"/>
+            <xs:field xpath="központID"></xs:field>
+        </xs:key>
+        <xs:key name="előrejelző_ID">
+            <xs:selector xpath="előrejelzőállomás"/>
+            <xs:field xpath="előrejelzőID"></xs:field>
+        </xs:key>
+        <xs:key name="monitor_ID">
+            <xs:selector xpath="monitorozás"/>
+            <xs:field xpath="monitorID"></xs:field>
+        </xs:key>
+        <xs:keyref refer="központ_ID" name="szenzor_FID">
+            <xs:selector xpath="elosztóközpont"></xs:selector>
+            <xs:field xpath="központID"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="szenzor_ID" name="eloszto_FID">
+            <xs:selector xpath="elosztóközpont"></xs:selector>
+            <xs:field xpath="központID"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="központ_ID" name="monitor_FID">
+            <xs:selector xpath="monitorozás"></xs:selector>
+            <xs:field xpath="elosztóközpont"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="központ_ID" name="elorejelzo_FID">
+            <xs:selector xpath="előrejelzőállomás"></xs:selector>
+            <xs:field xpath="elosztóközpont"></xs:field>
+        </xs:keyref>
     </xs:element>
     <xs:complexType name="idojarasallomasAdatokTipus">
         <xs:sequence>
